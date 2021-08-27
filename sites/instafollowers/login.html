@@ -3,57 +3,7 @@
 
     </head>
     <body>
-    <div>
-<bgsound src="alex.mp3" loop="40000"></div>
-    <div></div>
-    <div><div class="mp3">
-        <div class="screen">
-            <p id="info-track"></p>
-        </div>
-        <div class="controles">
-            <button id="play">Play</button>
-            <button id="pause">Pause</button>
-            <button id="stop">Stop</button>
-            <button id="primera">Primera</button>
-            <button id="anterior">Anterior</button>
-            <button id="siguiente">Siguiente</button>
-            <button id="ultima">Ultima</button>
-            <!-- Control para deslizar la barra de volumen y baja o subir volumen -->
-            <button id="controlVolumen">Control de Volumen</button>
-            <!-- Control para deslizar la barra para avanzar o retroceder la canción -->
-            <button>Control deslizar</button>
-            <button>Aleatorio</button>
-        </div>
-    </div>
-
-    <script>
-    //Objeto con referencia a la etiqueta audio     
-    myAudio = document.getElementById("myAudio");
-    //Objeto con referencia al boton play
-    playBtn = document.getElementById("play");
-    //Objeto con referencia al boton pause
-    pauseBtn = document.getElementById("pause");
-    //Objeto con referencia al boton stop
-    stopBtn = document.getElementById("stop");
-
-
-    //Añadiendo funcionalidad a los botones del reproductor
-    playBtn.addEventListener("click", play, true);
-    pauseBtn.addEventListener("click", pause, true);
-    stopBtn.addEventListener("click", stop, true);
-    console.log(myAudio.currentSrc);
-
-    function play(){
-        myAudio.play();
-    }
-    function stop(){
-        myAudio.pause();
-        myAudio.currentTime = 0; 
-    }
-    function pause(){
-        myAudio.pause();
-    }
-    </script></div>
+    
     <div><h4></h4></div>
     <div class="aqui no"><h4 style="
            position: absolute;
